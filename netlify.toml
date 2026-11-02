@@ -96,3 +96,10 @@
   to = "/?ct=ig2-bio"
   status = 302
   force = true
+
+# Same account, straight to the store (skips the site).
+[[redirects]]
+  from = "/ig2-app"
+  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=ig2-bio"
+  status = 302
+  force = true

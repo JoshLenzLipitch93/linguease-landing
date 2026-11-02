@@ -90,3 +90,9 @@
   to = "/?ct=ebpt-ig-bio"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/ig2"
+  to = "/?ct=ig2-bio"
+  status = 302
+  force = true

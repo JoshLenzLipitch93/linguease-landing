@@ -72,7 +72,7 @@
 #
 #   /ig      → ebpt-ig-bio     Instagram bio, Brazilian Portuguese  (LIVE)
 #   /tt      → ebpt-tt-bio     TikTok bio, same account             (not yet)
-#   /ig-es   → ebes-ig-bio     Instagram bio, Spanish account       (not yet)
+#   /ig-es   → luna-ig-bio     Instagram bio, Spanish account (Luna), straight to the store
 #   /tt-es   → ebes-tt-bio     TikTok bio, Spanish account          (not yet)
 #
 # The path is what a person sees in the address bar, so it stays short and
@@ -101,5 +101,13 @@
 [[redirects]]
   from = "/ig2-app"
   to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=ig2-bio"
+  status = 302
+  force = true
+
+# Spanish account (Luna, Instagram bio). Straight to the store: the site is
+# Portuguese-only, so a Spanish learner would bounce off it.
+[[redirects]]
+  from = "/ig-es"
+  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=luna-ig-bio"
   status = 302
   force = true

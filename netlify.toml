@@ -111,3 +111,11 @@
   to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=luna-ig-bio"
   status = 302
   force = true
+
+# Main Linguease Instagram (@linguease.app) bio. Straight to the store, tagged so
+# App Store Connect can count its views and downloads (replaces an untagged bit.ly).
+[[redirects]]
+  from = "/app"
+  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=linguease-ig-bio"
+  status = 302
+  force = true

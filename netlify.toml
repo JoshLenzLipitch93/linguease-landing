@@ -67,6 +67,11 @@
 # ---------------------------------------------------------------------------
 # Short campaign paths for the social channels.
 #
+# CLICK LOG (9 Nov 2026): every short path goes through the linguease-links
+# Worker, which records the click (time, link, country, source; no IP) and then
+# redirects to the real target. Targets and campaign tokens live in that
+# Worker's src/links.js; a new link needs a line there AND a redirect here.
+#
 # SCHEME — platform first, account as a suffix. The launch account
 # (@easybrazillian_pt) takes the bare paths; later accounts add a suffix.
 #
@@ -87,20 +92,20 @@
 # ---------------------------------------------------------------------------
 [[redirects]]
   from = "/ig"
-  to = "/?ct=ebpt-ig-bio"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/ig"
   status = 302
   force = true
 
 [[redirects]]
   from = "/ig2"
-  to = "/?ct=ig2-bio"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/ig2"
   status = 302
   force = true
 
 # Same account, straight to the store (skips the site).
 [[redirects]]
   from = "/ig2-app"
-  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=ig2-bio"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/ig2-app"
   status = 302
   force = true
 
@@ -108,7 +113,7 @@
 # Portuguese-only, so a Spanish learner would bounce off it.
 [[redirects]]
   from = "/ig-es"
-  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=luna-ig-bio"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/ig-es"
   status = 302
   force = true
 
@@ -116,6 +121,6 @@
 # App Store Connect can count its views and downloads (replaces an untagged bit.ly).
 [[redirects]]
   from = "/app"
-  to = "https://apps.apple.com/app/apple-store/id6751727490?pt=128102719&ct=linguease-ig-bio"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/app"
   status = 302
   force = true

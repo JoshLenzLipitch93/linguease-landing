@@ -67,6 +67,20 @@
 # ---------------------------------------------------------------------------
 # Short campaign paths for the social channels.
 #
+# FEEDBACK (18 Nov 2026): customer feedback page served by the linguease-links
+# Worker (src/feedback.js). Proxied (200), so the address stays lingueaseapp.com.
+[[redirects]]
+  from = "/feedback"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/feedback"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/feedback/*"
+  to = "https://linguease-links.joshlenzlipitch.workers.dev/feedback/:splat"
+  status = 200
+  force = true
+
 # CLICK LOG (9 Nov 2026): every short path goes through the linguease-links
 # Worker, which records the click (time, link, country, source; no IP) and then
 # redirects to the real target. Targets and campaign tokens live in that
